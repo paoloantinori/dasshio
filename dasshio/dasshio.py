@@ -19,7 +19,8 @@ from scapy.all import sniff
 
 
 BASE_URL = os.environ.get("HA_BASE_URL") or "http://hassio/homeassistant"
-
+logger.info("paolo waz here")
+logger.info(BASE_URL)
 
 def signal_handler(signal, frame):
     logger.warning("Caught signal: %s" % signal)
